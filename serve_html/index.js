@@ -4,7 +4,7 @@ const express= require("express"),
     layouts = require("express-ejs-layouts")
     path = require("path")
 
-app.set("port", process.env.PORT || 2000);
+app.set("port", process.env.PORT || 3000);
 app.set("view engine", "ejs");
 app.use(express.static("views"));
 app.use(express.static(path.join(__dirname, "public")));
