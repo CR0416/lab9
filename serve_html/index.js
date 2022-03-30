@@ -1,14 +1,14 @@
 const express= require("express"),
     app = express()
     homeController = require("./controllers/HomeController");
-    layouts = require("express-ejs-layouts")
+    ///layouts = require("express-ejs-layouts")
     path = require("path")
 
 app.set("port", process.env.PORT || 3000);
 app.set("view engine", "ejs");
 app.use(express.static("views"));
 app.use(express.static(path.join(__dirname, "public")));
-app.use(layouts);
+///app.use(layouts);
 app.use(
     express.urlencoded({
         extended: false

@@ -28,7 +28,6 @@ exports.sendReqParam = (req, res) => {
 //images/x
 exports.respondwithimage= (req, res) => {
     let paramimg = req.params.image;
-    res.render("picture",{layout: "picture"});
-    //res.render("picture", {name: paramimg});
+    res.render("picture", {name: paramimg});
 };
 
